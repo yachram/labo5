@@ -1,0 +1,38 @@
+#conteneur{
+    display: grid;
+    grid-template-columns: 100px 400px;
+    grid-template-rows: repeat(2, 100px) 300px 100px;
+    gap: 4px;
+
+    grid-template-areas: 
+    "header header "
+    "nav nav"
+    "aside main"
+    "footer footer";
+}
+
+.cell{
+    background-color:aquamarine;
+    padding-left: 25px;
+    padding-top: 35px;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+aside{
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
